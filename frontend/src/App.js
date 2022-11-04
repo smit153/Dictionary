@@ -21,7 +21,7 @@ function App() {
     const res = await response.json();
     setWord((prev) => [...prev, res]);
     setSearchedWord((prev) => [...prev, res]);
-    await fetch("https://dictionary-backend123.herokuapp.com/add", {
+    await fetch("http://localhost:8000/add", {
       method: "POST",
 
       body: JSON.stringify(res),
@@ -43,9 +43,7 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(
-        "https://dictionary-backend123.herokuapp.com/"
-      );
+      const response = await fetch("http://localhost:8000/");
       const res = await response.json();
       setWord(res.message);
       setSearchedWord(res.message);
