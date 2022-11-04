@@ -1,0 +1,83 @@
+.title-bar{
+  width: 100%;
+  height: 5vh;
+  background-color: #63244a;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  position: fixed;
+}
+.word-cont{
+  padding-left: 15px;
+  padding-right: 15px;
+  translate: 0 7vh;
+  z-index: -1;
+  position: absolute;
+
+}
+
+.search-cont>input{
+  width: 100%;
+  border-radius: 10px;
+  height: 25px;
+}
+
+.search-cont>div {
+  background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.search-cont>div:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.add-word{
+  position: fixed !important;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  background-color: #63244a !important;
+  color: white !important;
+  font-size: 30px !important;
+  border-radius: 50% !important;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24;
+  padding: 25px;
+
+}
+
+.find-cont{
+  display: flex;
+}
+.find-cont>input{
+  width: 50vw;
+  border-radius: 10px;
+}
+.find-cont>div{
+  cursor: pointer;
+}
