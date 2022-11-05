@@ -43,7 +43,7 @@ function App() {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch("http://localhost:8000/");
+      const response = await fetch("http://localhost:8000/get");
       const res = await response.json();
       setWord(res.message);
       setSearchedWord(res.message);
